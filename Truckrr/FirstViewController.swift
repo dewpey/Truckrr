@@ -9,6 +9,8 @@
 import UIKit
 import Eureka
 import GooglePlacesRow
+import Foundation
+
 class FirstViewController: FormViewController {
 
     override func viewDidLoad() {
@@ -32,6 +34,30 @@ class FirstViewController: FormViewController {
                 $0.title = "Desired Delivery Date"
                 $0.value = Date()
             }
+        
+            <<< GooglePlacesTableRow("Origin") { row in
+                row.title = "Origin" // Adds a title to a row
+                //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
+                row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
+                row.validationOptions = .validatesOnChangeAfterBlurred
+                row.cell.textLabel?.textColor = UIColor.black
+                row.placeFilter?.type = .address
+                }
+                .cellUpdate { cell, row in // Optional
+                    // Do something when cell updates
+            }
+            
+            <<< GooglePlacesTableRow("Destination") { row in
+                row.title = "Destination" // Adds a title to a row
+                //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
+                row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
+                row.validationOptions = .validatesOnChangeAfterBlurred
+                row.cell.textLabel?.textColor = UIColor.black
+                row.placeFilter?.type = .address
+                }
+                .cellUpdate { cell, row in // Optional
+                    // Do something when cell updates
+        }
         form +++
             MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete],
                                header: "Description of item",
@@ -67,36 +93,14 @@ class FirstViewController: FormViewController {
                 row.title = "Weight (oz.)"
                 row.placeholder = "16"
             }
-            <<< AlertRow<String>("bloodType") {
-                $0.title = "Is Object Fragile"
-                $0.selectorTitle = "Fragile"
-                $0.options = ["Fragile", "Not Fragile"]
-                $0.value = "Fragile"    // initially selected
-                
+            <<< SegmentedRow<String>("Fragility") { row in
+                row.options = ["Not Fragile", "Fragile"]
+                row.value = "Not Fragile"
             }
-            <<< GooglePlacesTableRow("Origin") { row in
-                row.title = "Origin" // Adds a title to a row
-                //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
-                row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
-                row.validationOptions = .validatesOnChangeAfterBlurred
-                row.cell.textLabel?.textColor = UIColor.black
-                row.placeFilter?.type = .address
-                }
-                .cellUpdate { cell, row in // Optional
-                    // Do something when cell updates
-        }
         
-           <<< GooglePlacesTableRow("Destination") { row in
-                row.title = "Destination" // Adds a title to a row
-                //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
-                row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
-                row.validationOptions = .validatesOnChangeAfterBlurred
-                row.cell.textLabel?.textColor = UIColor.black
-                row.placeFilter?.type = .address
-                }
-                .cellUpdate { cell, row in // Optional
-                    // Do something when cell updates
-        }
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
  
     }

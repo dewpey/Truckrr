@@ -15,6 +15,7 @@
 		0D4147642081967E0040B55D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4147622081967E0040B55D /* LaunchScreen.storyboard */; };
 		0D41476F2081967F0040B55D /* TruckrrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41476E2081967F0040B55D /* TruckrrTests.swift */; };
 		0D41477A2081967F0040B55D /* TruckrrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4147792081967F0040B55D /* TruckrrUITests.swift */; };
+		0DC76E4E2082701200107BEB /* ShippingOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC76E4D2082701200107BEB /* ShippingOptionsTableViewController.swift */; };
 		4EFECD23A60FC1E87B34509D /* Pods_TruckrrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B2394FFB4F478C3C52C735 /* Pods_TruckrrUITests.framework */; };
 		81AA7A875636B820D26D1ABC /* Pods_Truckrr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A210CD275DF589EBDBBC38 /* Pods_Truckrr.framework */; };
 		948872526705A81942A7F2FA /* Pods_TruckrrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF0D3AB7179DF8F83CB786A /* Pods_TruckrrTests.framework */; };
@@ -37,6 +38,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0DC76E4C2081B59500107BEB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0CA524439347843A67B6336C /* Pods-TruckrrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckrrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruckrrTests/Pods-TruckrrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D4147542081967E0040B55D /* Truckrr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Truckrr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +67,7 @@
 		0D4147752081967F0040B55D /* TruckrrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruckrrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4147792081967F0040B55D /* TruckrrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckrrUITests.swift; sourceTree = "<group>"; };
 		0D41477B2081967F0040B55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC76E4D2082701200107BEB /* ShippingOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingOptionsTableViewController.swift; sourceTree = "<group>"; };
 		13E9DE217C0934B9CA3A1EBE /* Pods-Truckrr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Truckrr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Truckrr/Pods-Truckrr.release.xcconfig"; sourceTree = "<group>"; };
 		1CF0D3AB7179DF8F83CB786A /* Pods_TruckrrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruckrrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAAD8AA6E39A404F1B95990 /* Pods-TruckrrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckrrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruckrrUITests/Pods-TruckrrUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +133,7 @@
 			children = (
 				0D4147572081967E0040B55D /* AppDelegate.swift */,
 				0D4147592081967E0040B55D /* FirstViewController.swift */,
+				0DC76E4D2082701200107BEB /* ShippingOptionsTableViewController.swift */,
 				0D41475B2081967E0040B55D /* SecondViewController.swift */,
 				0D41475D2081967E0040B55D /* Main.storyboard */,
 				0D4147602081967E0040B55D /* Assets.xcassets */,
@@ -180,6 +196,8 @@
 				0D4147512081967E0040B55D /* Frameworks */,
 				0D4147522081967E0040B55D /* Resources */,
 				C91C690B51B190832D46380F /* [CP] Embed Pods Frameworks */,
+				364EB9B7DE2BA4DB069DB387 /* [CP] Copy Pods Resources */,
+				0DC76E4C2081B59500107BEB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +216,8 @@
 				0D4147662081967F0040B55D /* Sources */,
 				0D4147672081967F0040B55D /* Frameworks */,
 				0D4147682081967F0040B55D /* Resources */,
+				75CF06907621957F0ADEA68F /* [CP] Embed Pods Frameworks */,
+				B9EAFB702F088C948A457580 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +237,8 @@
 				0D4147712081967F0040B55D /* Sources */,
 				0D4147722081967F0040B55D /* Frameworks */,
 				0D4147732081967F0040B55D /* Resources */,
+				3185B4559B014C5712FE519C /* [CP] Embed Pods Frameworks */,
+				26B56486DA5963C311317532 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,6 +324,81 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26B56486DA5963C311317532 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrUITests/Pods-TruckrrUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3185B4559B014C5712FE519C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrUITests/Pods-TruckrrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		364EB9B7DE2BA4DB069DB387 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Truckrr/Pods-Truckrr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75CF06907621957F0ADEA68F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrTests/Pods-TruckrrTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9EAFB702F088C948A457580 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrTests/Pods-TruckrrTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C91C690B51B190832D46380F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC76E4E2082701200107BEB /* ShippingOptionsTableViewController.swift in Sources */,
 				0D41475C2081967E0040B55D /* SecondViewController.swift in Sources */,
 				0D4147582081967E0040B55D /* AppDelegate.swift in Sources */,
 				0D41475A2081967E0040B55D /* FirstViewController.swift in Sources */,
