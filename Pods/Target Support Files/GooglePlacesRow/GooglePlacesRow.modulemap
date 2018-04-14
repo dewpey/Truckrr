@@ -1,0 +1,6 @@
+framework module GooglePlacesRow {
+  umbrella header "GooglePlacesRow-umbrella.h"
+
+  export *
+  module * { export * }
+}
