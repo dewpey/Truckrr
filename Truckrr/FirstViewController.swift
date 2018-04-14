@@ -73,7 +73,7 @@ class FirstViewController: FormViewController {
                 $0.value = "Fragile"    // initially selected
                 
             }
-        /*    <<< GooglePlacesTableRow("Origin") { row in
+            <<< GooglePlacesTableRow("Origin") { row in
                 row.title = "Origin" // Adds a title to a row
                 //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
                 row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
@@ -97,7 +97,7 @@ class FirstViewController: FormViewController {
                     // Do something when cell updates
         }
         // Do any additional setup after loading the view, typically from a nib.
- */
+ 
     }
 
     override func didReceiveMemoryWarning() {
