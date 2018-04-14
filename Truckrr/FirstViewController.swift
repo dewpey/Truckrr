@@ -23,15 +23,36 @@ class FirstViewController: FormViewController {
                 row.title = "Name of Good"
                 row.placeholder = "Lobster"
             }
-            <<< TextRow("Description"){ row in
+           /* <<< TextRow("Description"){ row in
                 row.title = "Description"
                 row.placeholder = "It has claws."
-            }
+            } */
             <<< DateRow(){
-                $0.title = "Arrive by Date"
+                $0.title = "Pickup Date"
                 $0.value = Date()
             }
-            
+            <<< DateRow(){
+                $0.title = "Desired Delivery Date"
+                $0.value = Date()
+            }
+        form +++
+            MultivaluedSection(multivaluedOptions: [.Reorder, .Insert, .Delete],
+                               header: "Description of item",
+                               footer: ".Insert adds a 'Add Item' (Add New Tag) button row as last cell.") {
+                                $0.addButtonProvider = { section in
+                                    return ButtonRow(){
+                                        $0.title = "Property"
+                                    }
+                                }
+                                $0.multivaluedRowToInsertAt = { index in
+                                    return NameRow() {
+                                        $0.placeholder = "Property"
+                                    }
+                                }
+                                $0 <<< NameRow() {
+                                    $0.placeholder = "Important Extra Information"
+                                }
+            }
             +++ Section("Dimensions & Weight")
             <<< IntRow("Length"){ row in
                 row.title = "Length (in.)"
@@ -49,6 +70,13 @@ class FirstViewController: FormViewController {
                 row.title = "Weight (oz.)"
                 row.placeholder = "16"
             }
+            <<< AlertRow<String>("bloodType") {
+                $0.title = "Is Object Fragile"
+                $0.selectorTitle = "Fragile"
+                $0.options = ["Fragile", "Not Fragile"]
+                $0.value = "Fragile"    // initially selected
+                
+            }
             <<< GooglePlacesTableRow("Origin") { row in
                 row.title = "Origin" // Adds a title to a row
                 //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
@@ -61,7 +89,7 @@ class FirstViewController: FormViewController {
                     // Do something when cell updates
         }
         
-            <<< GooglePlacesTableRow("Destination") { row in
+           <<< GooglePlacesTableRow("Destination") { row in
                 row.title = "Destination" // Adds a title to a row
                 //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
                 row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
@@ -81,6 +109,7 @@ class FirstViewController: FormViewController {
         print("Balance of " + coldWalletAddress.address + " = " + String(balance))
         
         // Do any additional setup after loading the view, typically from a nib.
+ 
     }
 
     override func didReceiveMemoryWarning() {
