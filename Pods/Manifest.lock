@@ -1,44 +1,16 @@
 PODS:
-  - Alamofire (4.7.1)
-  - Alamofire-Synchronous (4.0.0):
-    - Alamofire (~> 4.0)
-  - BigInt (3.0.1):
-    - SipHash (~> 1.2)
-  - CryptoSwift (0.9.0)
   - Eureka (4.0.1)
   - GooglePlacesRow (3.0.0):
     - Eureka (~> 4.0)
-  - libsodium (1.0.12)
-  - Result (3.0.0)
-  - secp256k1_ios (0.1.3)
-  - SipHash (1.2.0)
-  - web3swift (0.5.1):
-    - Alamofire (~> 4.7)
-    - Alamofire-Synchronous (~> 4.0)
-    - BigInt (~> 3.0.1)
-    - CryptoSwift (~> 0.9.0)
-    - libsodium (~> 1.0.12)
-    - Result (~> 3.0.0)
-    - secp256k1_ios (~> 0.1.3)
 
 DEPENDENCIES:
   - Eureka
   - GooglePlacesRow (~> 3.0)
-  - web3swift (~> 0.5)
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
-  Alamofire-Synchronous: eedf1e6e961c3795a63c74990b3f7d9fbfac7e50
-  BigInt: 8e8a52161c745cd3ab78e3dc346a9fbee51e6cf6
-  CryptoSwift: bca8c5b653dcc2d9734409242a070ff53bafac86
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
   GooglePlacesRow: c0bb6bc0acf8b2ab690986ef5c5ecb1085dd1d9e
-  libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
-  Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
-  secp256k1_ios: ac9ef04e761f43c58012b28548afa91493761f17
-  SipHash: c6e9e43e9c531b5bc6602545130c26194a6d31ce
-  web3swift: 3ca23513ffc6536fbe9d1437f62861159b14b887
 
-PODFILE CHECKSUM: c5860b289dbddda784feb5518ff598169122f49c
+PODFILE CHECKSUM: 701a03f7f051f5abe98ebdf2ea6e91bcab803880
 
 COCOAPODS: 1.4.0
