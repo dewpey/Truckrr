@@ -16,7 +16,8 @@ class FirstViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewDidLoad()
-        form +++ Section("General Information")
+        form +++
+            Section("General Information")
             <<< NameRow("Name"){ row in
                 row.title = "Name of Good"
                 row.placeholder = "Lobster"
