@@ -180,7 +180,6 @@
 				0D4147512081967E0040B55D /* Frameworks */,
 				0D4147522081967E0040B55D /* Resources */,
 				C91C690B51B190832D46380F /* [CP] Embed Pods Frameworks */,
-				65C28935CFE74B96D3C31ABC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,8 +198,6 @@
 				0D4147662081967F0040B55D /* Sources */,
 				0D4147672081967F0040B55D /* Frameworks */,
 				0D4147682081967F0040B55D /* Resources */,
-				1C3FD2F164DE476F1F53BE12 /* [CP] Embed Pods Frameworks */,
-				69B3927849FF6A419EC8F6E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,8 +217,6 @@
 				0D4147712081967F0040B55D /* Sources */,
 				0D4147722081967F0040B55D /* Frameworks */,
 				0D4147732081967F0040B55D /* Resources */,
-				99D39A17053CF14283C97D26 /* [CP] Embed Pods Frameworks */,
-				91D450E77C2596594F0C4009 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,81 +302,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C3FD2F164DE476F1F53BE12 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrTests/Pods-TruckrrTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65C28935CFE74B96D3C31ABC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Truckrr/Pods-Truckrr-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		69B3927849FF6A419EC8F6E1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrTests/Pods-TruckrrTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91D450E77C2596594F0C4009 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrUITests/Pods-TruckrrUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99D39A17053CF14283C97D26 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruckrrUITests/Pods-TruckrrUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C91C690B51B190832D46380F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

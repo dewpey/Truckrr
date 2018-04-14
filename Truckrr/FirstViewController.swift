@@ -27,10 +27,6 @@ class FirstViewController: FormViewController {
                 $0.title = "Arrive by Date"
                 $0.value = Date()
             }
-            <<< TextRow("Description"){ row in
-                row.title = "Description"
-                row.placeholder = "It has claws."
-            }
             
             +++ Section("Dimensions & Weight")
             <<< IntRow("Length"){ row in
