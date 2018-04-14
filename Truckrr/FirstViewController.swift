@@ -9,6 +9,10 @@
 import UIKit
 import Eureka
 import GooglePlacesRow
+import BigInt
+import web3swift
+import Foundation
+
 class FirstViewController: FormViewController {
 
     override func viewDidLoad() {
@@ -68,6 +72,14 @@ class FirstViewController: FormViewController {
                 .cellUpdate { cell, row in // Optional
                     // Do something when cell updates
         }
+        
+        
+         let web3Rinkeby = Web3.InfuraRinkebyWeb3()
+        //Balance on Rinkeby
+        let balanceResult = web3Rinkeby.eth.getBalance(address: )
+        guard case .success(let balance) = balanceResult else {return}
+        print("Balance of " + coldWalletAddress.address + " = " + String(balance))
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
