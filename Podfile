@@ -8,6 +8,7 @@ target 'Truckrr' do
   # Pods for Truckrr
 
 pod 'Eureka'
+pod 'GooglePlacesRow', '~> 3.0'
   target 'TruckrrTests' do
     inherit! :search_paths
     # Pods for testing

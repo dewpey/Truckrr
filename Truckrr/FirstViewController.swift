@@ -8,7 +8,7 @@
 
 import UIKit
 import Eureka
-
+import GooglePlacesRow
 class FirstViewController: FormViewController {
 
     override func viewDidLoad() {
@@ -26,10 +26,6 @@ class FirstViewController: FormViewController {
             <<< DateRow(){
                 $0.title = "Arrive by Date"
                 $0.value = Date()
-            }
-            <<< TextRow("Description"){ row in
-                row.title = "Description"
-                row.placeholder = "It has claws."
             }
             
             +++ Section("Dimensions & Weight")
@@ -49,6 +45,29 @@ class FirstViewController: FormViewController {
                 row.title = "Weight (oz.)"
                 row.placeholder = "16"
             }
+            <<< GooglePlacesTableRow("Origin") { row in
+                row.title = "Origin" // Adds a title to a row
+                //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
+                row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
+                row.validationOptions = .validatesOnChangeAfterBlurred
+                row.cell.textLabel?.textColor = UIColor.black
+                row.placeFilter?.type = .address
+                }
+                .cellUpdate { cell, row in // Optional
+                    // Do something when cell updates
+        }
+        
+            <<< GooglePlacesTableRow("Destination") { row in
+                row.title = "Destination" // Adds a title to a row
+                //row.tag = "location" // Upon parsing a form you get a nice key if you use a tag
+                row.add(ruleSet: RuleSet<GooglePlace>()) // We can use GooglePlace() as a rule
+                row.validationOptions = .validatesOnChangeAfterBlurred
+                row.cell.textLabel?.textColor = UIColor.black
+                row.placeFilter?.type = .address
+                }
+                .cellUpdate { cell, row in // Optional
+                    // Do something when cell updates
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
