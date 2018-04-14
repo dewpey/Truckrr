@@ -24,7 +24,11 @@ class FirstViewController: FormViewController {
                 row.placeholder = "It has claws."
             }
             <<< DateRow(){
-                $0.title = "Arrive by Date"
+                $0.title = "Pickup Date"
+                $0.value = Date()
+            }
+            <<< DateRow(){
+                $0.title = "Desired Delivery Date"
                 $0.value = Date()
             }
             
@@ -44,6 +48,12 @@ class FirstViewController: FormViewController {
             <<< IntRow("Weight"){ row in
                 row.title = "Weight (oz.)"
                 row.placeholder = "16"
+            }
+            <<< ActionSheetRow<String>() {
+                $0.title = "ActionSheetRow"
+                $0.selectorTitle = "Is object fragile"
+                $0.options = ["Fragile","Not Fragile"]
+                $0.value = "Fragile"    // initially selected
             }
             <<< GooglePlacesTableRow("Origin") { row in
                 row.title = "Origin" // Adds a title to a row
