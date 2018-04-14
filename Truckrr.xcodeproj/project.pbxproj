@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4147582081967E0040B55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4147572081967E0040B55D /* AppDelegate.swift */; };
+		0D41475A2081967E0040B55D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4147592081967E0040B55D /* FirstViewController.swift */; };
+		0D41475C2081967E0040B55D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41475B2081967E0040B55D /* SecondViewController.swift */; };
+		0D41475F2081967E0040B55D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D41475D2081967E0040B55D /* Main.storyboard */; };
+		0D4147612081967E0040B55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4147602081967E0040B55D /* Assets.xcassets */; };
+		0D4147642081967E0040B55D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4147622081967E0040B55D /* LaunchScreen.storyboard */; };
+		0D41476F2081967F0040B55D /* TruckrrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41476E2081967F0040B55D /* TruckrrTests.swift */; };
+		0D41477A2081967F0040B55D /* TruckrrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4147792081967F0040B55D /* TruckrrUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D41476B2081967F0040B55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D41474C2081967E0040B55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D4147532081967E0040B55D;
+			remoteInfo = Truckrr;
+		};
+		0D4147762081967F0040B55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D41474C2081967E0040B55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D4147532081967E0040B55D;
+			remoteInfo = Truckrr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D4147542081967E0040B55D /* Truckrr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Truckrr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4147572081967E0040B55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D4147592081967E0040B55D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		0D41475B2081967E0040B55D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0D41475E2081967E0040B55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D4147602081967E0040B55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D4147632081967E0040B55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D4147652081967E0040B55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D41476A2081967F0040B55D /* TruckrrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruckrrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D41476E2081967F0040B55D /* TruckrrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckrrTests.swift; sourceTree = "<group>"; };
+		0D4147702081967F0040B55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4147752081967F0040B55D /* TruckrrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruckrrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4147792081967F0040B55D /* TruckrrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckrrUITests.swift; sourceTree = "<group>"; };
+		0D41477B2081967F0040B55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D4147512081967E0040B55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4147672081967F0040B55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4147722081967F0040B55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D41474B2081967E0040B55D = {
+			isa = PBXGroup;
+			children = (
+				0D4147562081967E0040B55D /* Truckrr */,
+				0D41476D2081967F0040B55D /* TruckrrTests */,
+				0D4147782081967F0040B55D /* TruckrrUITests */,
+				0D4147552081967E0040B55D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D4147552081967E0040B55D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D4147542081967E0040B55D /* Truckrr.app */,
+				0D41476A2081967F0040B55D /* TruckrrTests.xctest */,
+				0D4147752081967F0040B55D /* TruckrrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D4147562081967E0040B55D /* Truckrr */ = {
+			isa = PBXGroup;
+			children = (
+				0D4147572081967E0040B55D /* AppDelegate.swift */,
+				0D4147592081967E0040B55D /* FirstViewController.swift */,
+				0D41475B2081967E0040B55D /* SecondViewController.swift */,
+				0D41475D2081967E0040B55D /* Main.storyboard */,
+				0D4147602081967E0040B55D /* Assets.xcassets */,
+				0D4147622081967E0040B55D /* LaunchScreen.storyboard */,
+				0D4147652081967E0040B55D /* Info.plist */,
+			);
+			path = Truckrr;
+			sourceTree = "<group>";
+		};
+		0D41476D2081967F0040B55D /* TruckrrTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D41476E2081967F0040B55D /* TruckrrTests.swift */,
+				0D4147702081967F0040B55D /* Info.plist */,
+			);
+			path = TruckrrTests;
+			sourceTree = "<group>";
+		};
+		0D4147782081967F0040B55D /* TruckrrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D4147792081967F0040B55D /* TruckrrUITests.swift */,
+				0D41477B2081967F0040B55D /* Info.plist */,
+			);
+			path = TruckrrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D4147532081967E0040B55D /* Truckrr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D41477E2081967F0040B55D /* Build configuration list for PBXNativeTarget "Truckrr" */;
+			buildPhases = (
+				0D4147502081967E0040B55D /* Sources */,
+				0D4147512081967E0040B55D /* Frameworks */,
+				0D4147522081967E0040B55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Truckrr;
+			productName = Truckrr;
+			productReference = 0D4147542081967E0040B55D /* Truckrr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D4147692081967F0040B55D /* TruckrrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4147812081967F0040B55D /* Build configuration list for PBXNativeTarget "TruckrrTests" */;
+			buildPhases = (
+				0D4147662081967F0040B55D /* Sources */,
+				0D4147672081967F0040B55D /* Frameworks */,
+				0D4147682081967F0040B55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D41476C2081967F0040B55D /* PBXTargetDependency */,
+			);
+			name = TruckrrTests;
+			productName = TruckrrTests;
+			productReference = 0D41476A2081967F0040B55D /* TruckrrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D4147742081967F0040B55D /* TruckrrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4147842081967F0040B55D /* Build configuration list for PBXNativeTarget "TruckrrUITests" */;
+			buildPhases = (
+				0D4147712081967F0040B55D /* Sources */,
+				0D4147722081967F0040B55D /* Frameworks */,
+				0D4147732081967F0040B55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D4147772081967F0040B55D /* PBXTargetDependency */,
+			);
+			name = TruckrrUITests;
+			productName = TruckrrUITests;
+			productReference = 0D4147752081967F0040B55D /* TruckrrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D41474C2081967E0040B55D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Drew Patel";
+				TargetAttributes = {
+					0D4147532081967E0040B55D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					0D4147692081967F0040B55D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D4147532081967E0040B55D;
+					};
+					0D4147742081967F0040B55D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D4147532081967E0040B55D;
+					};
+				};
+			};
+			buildConfigurationList = 0D41474F2081967E0040B55D /* Build configuration list for PBXProject "Truckrr" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D41474B2081967E0040B55D;
+			productRefGroup = 0D4147552081967E0040B55D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D4147532081967E0040B55D /* Truckrr */,
+				0D4147692081967F0040B55D /* TruckrrTests */,
+				0D4147742081967F0040B55D /* TruckrrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D4147522081967E0040B55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4147642081967E0040B55D /* LaunchScreen.storyboard in Resources */,
+				0D4147612081967E0040B55D /* Assets.xcassets in Resources */,
+				0D41475F2081967E0040B55D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4147682081967F0040B55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4147732081967F0040B55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D4147502081967E0040B55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41475C2081967E0040B55D /* SecondViewController.swift in Sources */,
+				0D4147582081967E0040B55D /* AppDelegate.swift in Sources */,
+				0D41475A2081967E0040B55D /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4147662081967F0040B55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41476F2081967F0040B55D /* TruckrrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4147712081967F0040B55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D41477A2081967F0040B55D /* TruckrrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D41476C2081967F0040B55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D4147532081967E0040B55D /* Truckrr */;
+			targetProxy = 0D41476B2081967F0040B55D /* PBXContainerItemProxy */;
+		};
+		0D4147772081967F0040B55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D4147532081967E0040B55D /* Truckrr */;
+			targetProxy = 0D4147762081967F0040B55D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D41475D2081967E0040B55D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D41475E2081967E0040B55D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D4147622081967E0040B55D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D4147632081967E0040B55D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D41477C2081967F0040B55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D41477D2081967F0040B55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D41477F2081967F0040B55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				INFOPLIST_FILE = Truckrr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.Truckrr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D4147802081967F0040B55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				INFOPLIST_FILE = Truckrr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.Truckrr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D4147822081967F0040B55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				INFOPLIST_FILE = TruckrrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.TruckrrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Truckrr.app/Truckrr";
+			};
+			name = Debug;
+		};
+		0D4147832081967F0040B55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				INFOPLIST_FILE = TruckrrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.TruckrrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Truckrr.app/Truckrr";
+			};
+			name = Release;
+		};
+		0D4147852081967F0040B55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				INFOPLIST_FILE = TruckrrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.TruckrrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Truckrr;
+			};
+			name = Debug;
+		};
+		0D4147862081967F0040B55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WHUAKUFHC;
+				INFOPLIST_FILE = TruckrrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.drewpatel.TruckrrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Truckrr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D41474F2081967E0040B55D /* Build configuration list for PBXProject "Truckrr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D41477C2081967F0040B55D /* Debug */,
+				0D41477D2081967F0040B55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D41477E2081967F0040B55D /* Build configuration list for PBXNativeTarget "Truckrr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D41477F2081967F0040B55D /* Debug */,
+				0D4147802081967F0040B55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4147812081967F0040B55D /* Build configuration list for PBXNativeTarget "TruckrrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4147822081967F0040B55D /* Debug */,
+				0D4147832081967F0040B55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4147842081967F0040B55D /* Build configuration list for PBXNativeTarget "TruckrrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4147852081967F0040B55D /* Debug */,
+				0D4147862081967F0040B55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D41474C2081967E0040B55D /* Project object */;
+}
