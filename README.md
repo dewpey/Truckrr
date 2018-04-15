@@ -4,8 +4,8 @@ Blockchain-based marketplace for shipping.
 
 
 ## Team Info
-Team Name: AlmostAdults
-Team Members: Drew Patel, Adeesh Parvathaneni, Jack Mostyn
+- **Team Name:** AlmostAdults
+- **Team Members:** Drew Patel, Adeesh Parvathaneni, Jack Mostyn
 
 ## Problem
 Trucking is an industry rarely associated with cutting edge technology. Afterall, trucking is a relatively old industry, however, the old industries are the ones that need new technology the most. 700 billions dollars is added to the US economy every year from trucking alone. This figure is significant, but it is also riddled with problems. The industry as a whole is incredibly inefficient. Every year, more than 29 billion miles are traveled by trucks with either completely empty, or only partially full loads. This is ironic considering that the demand for trucking far outweighs the supply. The trucking system also favors larger companies, which is very problematic considering that 90% of trucking companies have fleets with fewer than 6 trucks. Additionally, at the front end, freight brokers make the entire process 20-30% more expensive without even solving any of the efficiency problems. All of these issues can be solved with our blockchain and IOT based solution called Truckrr. 
