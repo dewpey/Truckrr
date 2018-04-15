@@ -9,7 +9,9 @@ target 'Truckrr' do
 
 pod 'Eureka'
 pod 'GooglePlacesRow', '~> 3.0'
-
+pod 'Alamofire'
+pod 'PostalAddressRow', '~> 2.0'
+pod 'SwiftyJSON', '~> 4.0'
   target 'TruckrrTests' do
     inherit! :search_paths
     # Pods for testing

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 
 class MasterViewControllerCell: UITableViewCell{
@@ -15,15 +17,43 @@ class MasterViewControllerCell: UITableViewCell{
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var descriptionBox: UILabel!
     @IBOutlet weak var price: UILabel!
-    @IBOutlet weak var indicator: UIView!
     
 }
 
+class Shipper {
+    
+    var email: String!
+    var name: String!
+    init (value: JSON) {
+        let json = JSON(value)
+        print(json)
+        email = json["email"].string
+        name = json["name"].string
+        
+    }
+    
+}
+
+
 class ShippingOptionsTableViewController: UITableViewController {
 
+    var shippers = [Shipper]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Alamofire.request("http://138.68.233.59:3000/api/Shipper").validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print(json)
+                for (key,subJson):(String, JSON) in json {
+                    self.shippers.append(Shipper(value: subJson))
+                    print(self.shippers[0].name)
+                    self.tableView.reloadData()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,6 +61,22 @@ class ShippingOptionsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //if the segue that triggered the function is the one to the detailed view controller
+        if segue.identifier == "showDetail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+
+                let item = self.shippers[indexPath.row]
+                //create a reference to the detail view controller
+                let controller = (segue.destination as! detailViewController)
+                //set all the variables of detailview controller
+                controller.shipperName = item.name
+                controller.shipperEmail = item.email
+
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,17 +91,13 @@ class ShippingOptionsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return shippers.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MasterViewControllerCell
-        cell.title.text
-            = "test"
-
-        
-        // Configure the cell...
+        cell.title.text = shippers[indexPath.row].name
 
         return cell
     }

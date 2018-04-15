@@ -10,7 +10,7 @@ import Eureka
 import GooglePlacesRow
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
