@@ -12,6 +12,8 @@ pod 'GooglePlacesRow', '~> 3.0'
 pod 'Alamofire'
 pod 'PostalAddressRow', '~> 2.0'
 pod 'SwiftyJSON', '~> 4.0'
+pod 'Font-Awesome-Swift', '~> 1.7.2'
+
   target 'TruckrrTests' do
     inherit! :search_paths
     # Pods for testing

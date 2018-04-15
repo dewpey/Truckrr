@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class detailViewController: UIViewController {
 
@@ -15,7 +17,7 @@ class detailViewController: UIViewController {
     
     var shipperName: String!
     var shipperEmail: String!
-    var shipmentId: Int = 0
+    var shipmentId: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +33,38 @@ class detailViewController: UIViewController {
     }
     
     @IBAction func shipWith(_ sender: Any) {
+        let parameters: Parameters = [
+            "$class": "org.acme.shipping.perishable.Contract",
+            "contractId": Int(arc4random()),
+            "sender": "sender@gmail.com",
+            "truck": "resource:org.acme.shipping.perishable.Truck#\(shipperEmail!)",
+            "shipment": "resource:org.acme.shipping.perishable.Shipment#\(shipmentId)",
+            "price": 10
+        ]
+        
+        Alamofire.request("http://138.68.233.59:3000/api/Contract",method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
+            
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                //var workingShipmentId = json["shipmentId"].int
+                print(json)
+                
+            case .failure(let error):
+                print(error)
+            }
+            
+            
+        }
+        
         
     }
     
-
+    @IBAction func backPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

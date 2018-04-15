@@ -14,10 +14,12 @@ import Alamofire
 import PostalAddressRow
 import SwiftyJSON
 class FirstViewController: FormViewController {
-
+var shipmentId: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewDidLoad()
+        
+        
         form +++
             Section("General Information")
             <<< NameRow("Name"){ row in
@@ -119,7 +121,7 @@ class FirstViewController: FormViewController {
         
         
         print(valuesDictionary)
-        let shipmentId = arc4random()
+        shipmentId = Int(arc4random())
         let parameters: Parameters = [
             "$class": "org.acme.shipping.perishable.Shipment",
             "shipmentId": String(shipmentId),
@@ -133,9 +135,7 @@ class FirstViewController: FormViewController {
             "weight": valuesDictionary["Weight"]!,
             "origin": originPostalAddressFormatted,
             "destination": destinationPostalAddressFormatted,
-            "currentLocation": originPostalAddressFormatted,
-            "contract": "resource:org.acme.shipping.perishable.Contract#0106"
-            
+            "currentLocation": originPostalAddressFormatted
         ]
         Alamofire.request("http://138.68.233.59:3000/api/Shipment",method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
             
@@ -143,8 +143,6 @@ class FirstViewController: FormViewController {
             case .success(let value):
                 let json = JSON(value)
                 //var workingShipmentId = json["shipmentId"].int
-                let controller = detailViewController()
-                controller.shipmentId = Int(shipmentId)
                 print(json)
                 
                 self.performSegue(withIdentifier: "toListing", sender: nil)
@@ -154,21 +152,27 @@ class FirstViewController: FormViewController {
             
         
         }
-        
+    }
        // let Origin = valuesDictionary["Origin"]! as! GooglePlace
         
         //print(Origin.prediction)
         //let description = valuesDictionary["Destination"]!
         
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "toListing"{
+                if let nextViewController = segue.destination as? ShippingOptionsTableViewController{
+                    nextViewController.shipmentId = Int(shipmentId)
+                }
+            }
+        }
+
         
-        
-        
-    }
-    override func didReceiveMemoryWarning() {
+    
+override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
+
 

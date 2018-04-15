@@ -1,16 +1,29 @@
 PODS:
-  - Eureka (4.0.1)
+  - Alamofire (4.7.1)
+  - Eureka (4.0.0)
+  - Font-Awesome-Swift (1.7.2)
   - GooglePlacesRow (3.0.0):
     - Eureka (~> 4.0)
+  - PostalAddressRow (2.0.0):
+    - Eureka (= 4.0)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Eureka
+  - Font-Awesome-Swift (~> 1.7.2)
   - GooglePlacesRow (~> 3.0)
+  - PostalAddressRow (~> 2.0)
+  - SwiftyJSON (~> 4.0)
 
 SPEC CHECKSUMS:
-  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Eureka: c0b55d2aec82050c1400c7d65960b700be8d10ef
+  Font-Awesome-Swift: 83ab9db365379ee6025167cec67bdc5d3226a811
   GooglePlacesRow: c0bb6bc0acf8b2ab690986ef5c5ecb1085dd1d9e
+  PostalAddressRow: 55556c09526d699d2e16c96033577e577397272e
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 701a03f7f051f5abe98ebdf2ea6e91bcab803880
+PODFILE CHECKSUM: de732e51718b9234857dcab56308365e9efcfbad
 
 COCOAPODS: 1.4.0

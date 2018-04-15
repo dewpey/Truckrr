@@ -24,6 +24,7 @@ class Shipper {
     
     var email: String!
     var name: String!
+    var price: Double!
     init (value: JSON) {
         let json = JSON(value)
         print(json)
@@ -37,10 +38,11 @@ class Shipper {
 
 class ShippingOptionsTableViewController: UITableViewController {
 
+    var shipmentId: Int!
     var shippers = [Shipper]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        Alamofire.request("http://138.68.233.59:3000/api/Shipper").validate().responseJSON { response in
+        Alamofire.request("http://138.68.233.59:3000/api/Truck").validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
@@ -68,11 +70,11 @@ class ShippingOptionsTableViewController: UITableViewController {
 
                 let item = self.shippers[indexPath.row]
                 //create a reference to the detail view controller
-                let controller = (segue.destination as! detailViewController)
+                let controller = (segue.destination as! UINavigationController).topViewController as! detailViewController
                 //set all the variables of detailview controller
                 controller.shipperName = item.name
                 controller.shipperEmail = item.email
-
+                controller.shipmentId = shipmentId
             }
         }
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D3EC910208351980019F484 /* ShipmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EC90F208351980019F484 /* ShipmentDetailViewController.swift */; };
+		0D3EC912208385DC0019F484 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EC911208385DC0019F484 /* TabViewController.swift */; };
 		0D4147582081967E0040B55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4147572081967E0040B55D /* AppDelegate.swift */; };
 		0D41475A2081967E0040B55D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4147592081967E0040B55D /* FirstViewController.swift */; };
 		0D41475C2081967E0040B55D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D41475B2081967E0040B55D /* SecondViewController.swift */; };
@@ -17,6 +19,7 @@
 		0D41477A2081967F0040B55D /* TruckrrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4147792081967F0040B55D /* TruckrrUITests.swift */; };
 		0DC76E4E2082701200107BEB /* ShippingOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC76E4D2082701200107BEB /* ShippingOptionsTableViewController.swift */; };
 		0DC76E502082F7FD00107BEB /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC76E4F2082F7FD00107BEB /* detailViewController.swift */; };
+		0DC76E5220832D0200107BEB /* TruckerCurrentShipmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC76E5120832D0200107BEB /* TruckerCurrentShipmentsTableViewController.swift */; };
 		4EFECD23A60FC1E87B34509D /* Pods_TruckrrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B2394FFB4F478C3C52C735 /* Pods_TruckrrUITests.framework */; };
 		81AA7A875636B820D26D1ABC /* Pods_Truckrr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A210CD275DF589EBDBBC38 /* Pods_Truckrr.framework */; };
 		948872526705A81942A7F2FA /* Pods_TruckrrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF0D3AB7179DF8F83CB786A /* Pods_TruckrrTests.framework */; };
@@ -54,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		0CA524439347843A67B6336C /* Pods-TruckrrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckrrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruckrrTests/Pods-TruckrrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D3EC90F208351980019F484 /* ShipmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentDetailViewController.swift; sourceTree = "<group>"; };
+		0D3EC911208385DC0019F484 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		0D4147542081967E0040B55D /* Truckrr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Truckrr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4147572081967E0040B55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4147592081967E0040B55D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 		0D41477B2081967F0040B55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC76E4D2082701200107BEB /* ShippingOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingOptionsTableViewController.swift; sourceTree = "<group>"; };
 		0DC76E4F2082F7FD00107BEB /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		0DC76E5120832D0200107BEB /* TruckerCurrentShipmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckerCurrentShipmentsTableViewController.swift; sourceTree = "<group>"; };
 		13E9DE217C0934B9CA3A1EBE /* Pods-Truckrr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Truckrr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Truckrr/Pods-Truckrr.release.xcconfig"; sourceTree = "<group>"; };
 		1CF0D3AB7179DF8F83CB786A /* Pods_TruckrrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruckrrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAAD8AA6E39A404F1B95990 /* Pods-TruckrrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruckrrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruckrrUITests/Pods-TruckrrUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,14 +140,17 @@
 			isa = PBXGroup;
 			children = (
 				0D4147572081967E0040B55D /* AppDelegate.swift */,
+				0DC76E5120832D0200107BEB /* TruckerCurrentShipmentsTableViewController.swift */,
 				0D4147592081967E0040B55D /* FirstViewController.swift */,
 				0DC76E4D2082701200107BEB /* ShippingOptionsTableViewController.swift */,
 				0DC76E4F2082F7FD00107BEB /* detailViewController.swift */,
 				0D41475B2081967E0040B55D /* SecondViewController.swift */,
 				0D41475D2081967E0040B55D /* Main.storyboard */,
+				0D3EC90F208351980019F484 /* ShipmentDetailViewController.swift */,
 				0D4147602081967E0040B55D /* Assets.xcassets */,
 				0D4147622081967E0040B55D /* LaunchScreen.storyboard */,
 				0D4147652081967E0040B55D /* Info.plist */,
+				0D3EC911208385DC0019F484 /* TabViewController.swift */,
 			);
 			path = Truckrr;
 			sourceTree = "<group>";
@@ -411,6 +420,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Truckrr/Pods-Truckrr-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/GooglePlacesRow/GooglePlacesRow.framework",
 				"${BUILT_PRODUCTS_DIR}/PostalAddressRow/PostalAddressRow.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -419,6 +429,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GooglePlacesRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PostalAddressRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -489,10 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3EC912208385DC0019F484 /* TabViewController.swift in Sources */,
 				0DC76E4E2082701200107BEB /* ShippingOptionsTableViewController.swift in Sources */,
 				0D41475C2081967E0040B55D /* SecondViewController.swift in Sources */,
 				0D4147582081967E0040B55D /* AppDelegate.swift in Sources */,
 				0DC76E502082F7FD00107BEB /* detailViewController.swift in Sources */,
+				0D3EC910208351980019F484 /* ShipmentDetailViewController.swift in Sources */,
+				0DC76E5220832D0200107BEB /* TruckerCurrentShipmentsTableViewController.swift in Sources */,
 				0D41475A2081967E0040B55D /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
