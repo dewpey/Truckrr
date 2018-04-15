@@ -14,8 +14,8 @@ Trucking is an industry rarely associated with cutting edge technology. Afterall
 Truckrr allows for the replacement of the middle man by allowing for more access. The key product is the access to a marketplace. Through the utilization of hyperledger, a blockchain based product, we allow for a decentralized atmosphere for trucking. This allows for people who need their product shipped to connect directly with the truck drivers rather than going through big trucking companies and brokers. This makes the consumer able to ship product faster and at far cheaper rates as they do not need to negotiate through a broker. Further since the truck driver does not have to go through a broker as well they make more money and are incentivized to stay on our app and continue making an increased profit. This creates an ecosystem where both the small business owner and these truck drivers are incentivized all while solving some of the industry’s leading problems. No longer will there be empty or partially full loads as multiple small businesses can put their products all on one truck. This app will put the power all back into the individual. 
 
 ## Usage
-Git Clone this thing
-Open the XCWorkspace in Xcode
-Download the pods with pod install inside the directory
-(If you want to test the hyperledger network then spin up a docker image of hyperledger and throw on the .bna file)
-View the hyperledger network inside hyperledger folder
+- Git Clone this thing
+- Open the XCWorkspace in Xcode
+- Download the pods with 'pod install' inside the directory
+- (If you want to test the hyperledger network then spin up a docker image of hyperledger and throw on the .bna file)
+- View the hyperledger network inside hyperledger folder
