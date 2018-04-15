@@ -25,11 +25,24 @@ class Shipper {
     var email: String!
     var name: String!
     var price: Double!
+    var length: Double!
+    var width: Double!
+    var height: Double!
+    var totalArea: Double!
+    var pricePerUnit: Double!
+    var rating: String!
     init (value: JSON) {
         let json = JSON(value)
         print(json)
         email = json["email"].string
         name = json["name"].string
+        price = json["Price"].double
+        length = json["length"].double
+        width = json["width"].double
+        height = json["height"].double
+        rating = json["Rating"].string
+        let totalArea = ((length * width) * height!)
+        let pricePerUnit = price/totalArea
         
     }
     
@@ -39,6 +52,10 @@ class Shipper {
 class ShippingOptionsTableViewController: UITableViewController {
 
     var shipmentId: Int!
+    var length: Double!
+    var width: Double!
+    var height: Double!
+    
     var shippers = [Shipper]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,7 +117,8 @@ class ShippingOptionsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MasterViewControllerCell
         cell.title.text = shippers[indexPath.row].name
-
+        cell.price.text = String(shippers[indexPath.row].price)
+        cell.descriptionBox.text = "Rating: \(shippers[indexPath.row].rating!)"
         return cell
     }
  

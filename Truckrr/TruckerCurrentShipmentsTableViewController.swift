@@ -53,16 +53,16 @@ class Contract {
             case .success(let value):
                 let json = JSON(value)
                 print(json)
-                self.shipmentName = json["name"].string
-                self.shipmentOrigin = json["origin"].string
-                self.shipmentDestination = json["destination"].string
-                self.shipmentHeight = json["height"].double
-                self.shipmentWidth = json["width"].double
-                self.shipmentLength = json["length"].double
-                self.shipmentWeight = json["weight"].int
-                self.shipmentStatus = json["status"].string
-                self.shipmentType = json["type"].string
-                self.shipmentUnitCount = json["unitCount"].int
+                self.shipmentName = json[0]["name"].string
+                self.shipmentOrigin = json[0]["origin"].string
+                self.shipmentDestination = json[0]["destination"].string
+                self.shipmentHeight = json[0]["height"].double
+                self.shipmentWidth = json[0]["width"].double
+                self.shipmentLength = json[0]["length"].double
+                self.shipmentWeight = json[0]["weight"].int
+                self.shipmentStatus = json[0]["status"].string
+                self.shipmentType = json[0]["type"].string
+                self.shipmentUnitCount = json[0]["unitCount"].int
             case .failure(let error):
                 print(error)
             }
@@ -146,6 +146,9 @@ class TruckerCurrentShipmentsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MasterViewControllerCell
         cell.title.text = contracts[indexPath.row].contractId
         cell.descriptionBox.text = contracts[indexPath.row].senderId
+                let prices = ["$175", "$280", "$500", "$600", "$700", "$800"]
+        cell.price.text = prices[indexPath.row]
+
 print(contracts[indexPath.row].senderEmail)
         return cell
     }
